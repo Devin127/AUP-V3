@@ -1,0 +1,1 @@
+<!-- delete books from table -->

@@ -18,10 +18,10 @@ session_start();
             <br>
             <!-- add a radio for librarian or member -->
             <p>Are you a librarian?</p>
-            <input id="UserRole" type="radio" name="UserRole" value="Librarian" required>
+            <input id="UserRole" type="radio" name="Librarian" value="Librarian" required>
             <p>Or a Member?</p>
             <br>
-            <input id="UserRole" type="radio" name="UserRole" value="Member" required>
+            <input id="UserRole" type="radio" name="Member" value="Member" required>
             
             <input id="UserPassword" type="password" name="UserPassword" placeholder="Your Password" required>
             <input id="UserPassword2" type="password" name="UserPassword2" placeholder="Confirm Password" required>

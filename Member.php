@@ -12,6 +12,8 @@ session_start();
 <body>
 <!-- search Function -->
 <!-- search books-->
+<h1>Welcome to Only-Books</h1>
+<p>You can find all the books you are looking for over here</p>
 <h1>Member Stuff gets done here</h1>
 <p>add</p>
 <p>delete</p>

@@ -11,8 +11,13 @@ session_start();
 </head>
 <body>
     <?php
-    if(isset($_SESSION['UserRole']) == 'Librarian'){
+    if(isset($_SESSION['UserRole']) && $_SESSION['UserRole'] == 'Librarian'){
+        // header ("Location: home.php");
         include ('Librarian.php');
-    } else {
+    } else if(isset($_SESSION['UserRole']) && $_SESSION['UserRole'] == 'Member') {
+        // header ("Location: home.php");
         include ('Member.php');
+    } else {
+        header ('Location: signIn.php');
     }
+    ?> 

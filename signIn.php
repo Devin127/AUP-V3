@@ -21,4 +21,5 @@ session_start();
 
 
     </form>
+    <p>Dont have an account?<a href="signUp.php">Sign Up</a></p>
 </body>

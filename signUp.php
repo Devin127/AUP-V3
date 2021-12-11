@@ -27,5 +27,6 @@ session_start();
             <input id="UserPassword2" type="password" name="UserPassword2" placeholder="Confirm Password" required>
             <input type="submit" name="submit" value="Sign Up">
         </form>
+        <p>Already a have an account?<a href="signIn.php">Sign In</p>
     </body>
         

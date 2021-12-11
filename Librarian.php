@@ -19,24 +19,13 @@
         <body>
             <h1>Welcome to the Librarian Portal</h1>
             <p>You can Manage the books in your library over here</p>
-            <!-- search for books  -->
-            <!-- search for books  -->
-            <!-- search for books  -->
-            <!-- search for books  -->
-            <!-- search for books  -->
-            <!-- search for books  -->
-            <!-- search for books  -->
-            <!-- search for books  -->
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="card"> 
                         <form action="Librarian.php" method="GET">
                             <input type="text" name="query" placeholder="Search for a book">
                             <button type="submit" name="searchSubmit" id="searchSubmit" value="Search">Search</button>
                         </form>
-                    </div>
-                </div>
-            </div>
         <!-- Book_ID,Author, Author_Age, Author_Genre, Genre, Book, Year, Age_Group, Author_ID  -->
         <?php
             $query = $_GET['query'];
@@ -61,19 +50,14 @@
                             echo "No results";
                         }
                     }   
-        ?>            
-        <!-- search for books -->
-        <!-- search for books -->
-        <!-- search for books -->
-        <!-- search for books -->
-        <!-- search for books -->
-        <!-- search for books -->
-        <!-- search for books -->
-
+        ?>   
+                    </div>
+                </div>
+            </div>         
         <div class="container">
             <div class="row">
                 <div class="card"> 
-                    <h1>Add a new book</h1>
+                    
         <?php 
             $result = mysqli_query($conn, "SELECT * FROM library");
             if(mysqli_num_rows($result) > 0){ ?> 
@@ -95,9 +79,7 @@
                             </tr>
                         </thead>
                         <tbody>
-
                     <?php while($row = mysqli_fetch_array($result)){ ?>
-
                             <tr>
                                 <td><?php echo $row['Book_ID']; ?></td>
                                 <td><?php echo $row['Author']; ?></td>
@@ -145,7 +127,7 @@
                 }
             }
             ?>
-            
+            <h1>Add a new book</h1>
             <form class ="row g-3" action="Librarian.php" method="post">
                 <div class="col-md-6">
                 <p>Author: <input class="form-control" id ="Author" type="text" name="Author" placeholder="Author" required></p>
